@@ -17,6 +17,18 @@ public class ProcessInstance {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    private String name;
+
+    private String currentActivityIds;
+
+    private String defId;
+
+    private String data;
+
+    private String roleBindings;
+
+    private Date createdAt;
+
     public static ProcessInstanceRepository repository() {
         ProcessInstanceRepository processInstanceRepository = ProcessdefinitionApplication.applicationContext.getBean(
             ProcessInstanceRepository.class

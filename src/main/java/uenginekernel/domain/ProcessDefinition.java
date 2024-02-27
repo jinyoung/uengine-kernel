@@ -17,6 +17,18 @@ public class ProcessDefinition {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    private String name;
+
+    private String definition;
+
+    private String version;
+
+    private Date createdAt;
+
+    private Date modified;
+
+    private String author;
+
     public static ProcessDefinitionRepository repository() {
         ProcessDefinitionRepository processDefinitionRepository = ProcessdefinitionApplication.applicationContext.getBean(
             ProcessDefinitionRepository.class
