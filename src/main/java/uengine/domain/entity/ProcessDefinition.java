@@ -1,16 +1,15 @@
-package uenginekernel.domain;
+package uengine.domain.entity;
 
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
-import uenginekernel.ProcessdefinitionApplication;
+import uengine.ProcessdefinitionApplication;
 
 @Entity
 @Table(name = "ProcessDefinition_table")
 @Data
-//<<< DDD / Aggregate Root
 public class ProcessDefinition {
 
     @Id
@@ -24,4 +23,7 @@ public class ProcessDefinition {
         return processDefinitionRepository;
     }
 }
-//>>> DDD / Aggregate Root
+
+
+
+

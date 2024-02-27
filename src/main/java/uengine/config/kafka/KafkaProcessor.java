@@ -1,4 +1,4 @@
-package uenginekernel.config.kafka;
+package uengine.config.kafka;
 
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.cloud.stream.annotation.Output;
@@ -9,9 +9,9 @@ public interface KafkaProcessor {
     String INPUT = "event-in";
     String OUTPUT = "event-out";
 
-    @Input(INPUT)
+    //@Input(INPUT)
     SubscribableChannel inboundTopic();
 
-    @Output(OUTPUT)
+    //@Output(OUTPUT)
     MessageChannel outboundTopic();
 }

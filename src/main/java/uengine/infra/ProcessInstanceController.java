@@ -1,4 +1,4 @@
-package uenginekernel.infra;
+package uengine.infra;
 
 import java.util.Optional;
 import javax.servlet.http.HttpServletRequest;
@@ -8,16 +8,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import uenginekernel.domain.*;
+
+import uengine.domain.*;
 
 //<<< Clean Arch / Inbound Adaptor
 
 @RestController
-// @RequestMapping(value="/processDefinitions")
+// @RequestMapping(value="/processInstances")
 @Transactional
-public class ProcessDefinitionController {
+public class ProcessInstanceController {
 
     @Autowired
-    ProcessDefinitionRepository processDefinitionRepository;
+    ProcessInstanceRepository processInstanceRepository;
 }
 //>>> Clean Arch / Inbound Adaptor

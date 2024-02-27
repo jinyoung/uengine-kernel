@@ -1,11 +1,11 @@
-package uenginekernel.domain;
+package uengine.domain.entity;
 
 import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
-import uenginekernel.ProcessdefinitionApplication;
+import uengine.ProcessdefinitionApplication;
 
 @Entity
 @Table(name = "ProcessInstance_table")
