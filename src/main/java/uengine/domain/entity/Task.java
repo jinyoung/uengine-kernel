@@ -7,7 +7,7 @@ import java.util.Map;
 import lombok.Data;
 
 @Data
-public class Task {
+public class Task extends FlowElement{
     private String id;
     private String name;
     private String formKey;
